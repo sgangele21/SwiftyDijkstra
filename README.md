@@ -11,7 +11,7 @@ Simple code showing how dijkstra's algorithms works when coded from scratch. The
 ```swift
 d[v] -> Length of current shortest path from source s to v
 PI[v] -> Predecessor of v in the shortest path from s to v
-
+w(u,v) -> Weight function that calculates the weight from u to v
 u -----2----- v
 w = 2
 
