@@ -6,9 +6,14 @@ Simple code showing how dijkstra's algorithms works when coded from scratch. The
 * **Graph:** Contains the list of vertices. Is used as a place to put data after Dijkstra's is run through the graph.
 * **VertexEdges:** Contiains Vertex class which contains a dictionary of edges whose value is a Vertex, and key is the Weight. It also contains id, and data. Each Vertex is comparable, hashable, & printable.
 * **MinHeapMap**: Special type of min heap that includes a map, so you can map vertices to priorities in the heap. Given a vertex, this heap will map the vertex to a position in the heap, where it's priority value resides. This makes for easier coding when dealing with dijkstra's.
-* **Dijkstra:** Main Playground where it shows initialization of all the vertices and weights. As well as Dijkstra's Algorithm. It uses the relaxtion principle which says the following:
+* **Dijkstra:** Main Playground where it shows initialization of all the vertices and weights. As well as Dijkstra's Algorithm. It uses the **relaxtion principle** which says the following:
 
 ```swift
+
+Relaxation Principle
+---------------------
+
+
 d[v] -> Length of current shortest path from source s to v
 PI[v] -> Predecessor of v in the shortest path from s to v
 w(u,v) -> Weight function that calculates the weight from u to v
